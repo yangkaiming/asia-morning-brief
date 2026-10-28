@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-28",
+  "time": "08:04（日韩开盘）",
+  "usDate": "美东 10.27",
+  "title": "10.28 亚太早盘｜美股芯片牛延续，日韩双双高开",
+  "tag": "SK海力士财报引爆，存储链条全球共振",
+  "lead": "隔夜美股半导体继续走强（费半 <span style='color:#e60000;font-weight:700;border-bottom:1px dashed #e60000;'>+3.6%</span>），叠加 SK 海力士炸裂财报，今早日经 <span style='color:#e60000;font-weight:700;border-bottom:1px dashed #e60000;'>+0.74%</span>、韩国 <span style='color:#e60000;font-weight:700;border-bottom:1px dashed #e60000;'>+2.23%</span> 双双高开，存储双雄领涨。",
+  "us": [
+    { "name": "道指", "pct": 0.03, "value": "52377.57", "note": "基本平盘" },
+    { "name": "标普500", "pct": 0.6, "value": "7722.60" },
+    { "name": "纳指", "pct": 1.18, "value": "26477.81" },
+    { "name": "费城半导体指数", "pct": 3.6, "note": "当之无愧的发动机" }
+  ],
+  "usExtra": "存储芯片集体走强：西部数据 <span style='color:#e60000;font-weight:700;border-bottom:1px dashed #e60000;'>+6.95%</span>、美光 <span style='color:#e60000;font-weight:700;border-bottom:1px dashed #e60000;'>+2.77%</span>；七巨头分化：微软 <span style='color:#009944;font-weight:700;border-bottom:1px dashed #009944;'>-0.24%</span>、Meta <span style='color:#009944;font-weight:700;border-bottom:1px dashed #009944;'>-1.64%</span>。",
+  "asia": [
+    { "name": "日经225", "pct": 0.74, "value": "63738.98", "note": "高开" },
+    { "name": "韩国KOSPI", "pct": 2.23, "value": "5763.85", "note": "高开" }
+  ],
+  "news": {
+    "title": "引爆点｜SK海力士盘前财报",
+    "text": "Q3 营收 <span style='color:#e60000;font-weight:700;border-bottom:1px dashed #e60000;'>104.62 万亿韩元</span>（单季首破100万亿，预期98.96万亿），营业利润 <span style='color:#e60000;font-weight:700;border-bottom:1px dashed #e60000;'>83.33 万亿韩元</span>（同比 <span style='color:#e60000;font-weight:700;border-bottom:1px dashed #e60000;'>+632%</span>）。"
+  },
+  "asiaExtra": "开盘后韩股继续拉升，KOSPI 一度涨超 <span style='color:#e60000;font-weight:700;border-bottom:1px dashed #e60000;'>+4%</span> 并触发 sidecar（暂停程序化买盘）；日经一度 <span style='color:#e60000;font-weight:700;border-bottom:1px dashed #e60000;'>+1.19%</span>。",
+  "insights": [
+    "<b style='font-weight:700;'>财报驱动，韩国强于日本</b>：韩国高开 2.23% 明显大于日经 0.74%，根因是 SK 海力士这份“破纪录”财报点燃本土半导体情绪。",
+    "<b style='font-weight:700;'>存储链条全球共振</b>：隔夜美股美光/西部数据大涨，今早亚太三星/SK海力士跟涨。",
+    "<b style='font-weight:700;'>波动风险仍在</b>：韩国盘中一度涨超 4% 并触发 sidecar，开盘强势不等于收盘无忧。"
+  ],
+  "watch": "盯住两个开盘位：日经 <b style='font-weight:700;'>63738</b>、韩国 <b style='font-weight:700;'>5763</b>。守稳则为日内支撑；破位说明财报脉冲退潮。重点看 SK海力士、三星电子能否全天扛住。",
+  "sources": "公开行情（证券时报 / 中国证券网 / 澎湃新闻 / 每日经济新闻 / 中新经纬 / 中国基金报等）"
+}
