@@ -6,7 +6,7 @@ const p = require('path');
 const RED = '#e60000', GREEN = '#009944', DARK = '#1a1a1a';
 const src = process.argv[2];
 if (!src) { console.error('USAGE: node render.js <data.json> [outDir]'); process.exit(1); }
-const outDir = process.argv[3] || p.resolve(__dirname, '../../../outbox');
+const outDir = process.argv[3] || p.join(process.env.BRIEF_WORK || process.cwd(), 'outbox');
 const d = JSON.parse(fs.readFileSync(src, 'utf8'));
 const tpl = fs.readFileSync(p.join(__dirname, '../assets/template.html'), 'utf8');
 

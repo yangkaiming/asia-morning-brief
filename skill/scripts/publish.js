@@ -3,10 +3,29 @@
 // 环境变量: GH_PAT(默认读 <工作区>/.github_pat) / GH_REPO / GH_BRANCH / GH_FILE
 const fs = require('fs');
 const p = require('path');
+const os = require('os');
 const https = require('https');
 
-const WORK = p.resolve(__dirname, '../../../');
-const TOKEN = process.env.GH_PAT || fs.readFileSync(p.join(WORK, '.github_pat'), 'utf8').trim();
+const WORK = process.env.BRIEF_WORK || process.cwd();
+
+function findToken() {
+  if (process.env.GH_PAT) return process.env.GH_PAT.trim();
+  const cands = [
+    p.join(WORK, '.github_pat'),
+    p.join(os.homedir(), '.codebuddy', '.github_pat'),
+    p.join(os.homedir(), '.github_pat')
+  ];
+  for (const f of cands) {
+    if (fs.existsSync(f)) return fs.readFileSync(f, 'utf8').trim();
+  }
+  return null;
+}
+
+const TOKEN = findToken();
+if (!TOKEN) {
+  console.log('NO_TOKEN: 请设置环境变量 GH_PAT，或把 token 写入 ' + p.join(WORK, '.github_pat'));
+  process.exit(4);
+}
 const REPO = process.env.GH_REPO || 'yangkaiming/asia-morning-brief';
 const BRANCH = process.env.GH_BRANCH || 'main';
 const FILE = process.env.GH_FILE || 'asia_morning_latest.html';

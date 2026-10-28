@@ -3,7 +3,7 @@
 const fs = require('fs');
 const p = require('path');
 
-const f = process.argv[2] || p.resolve(__dirname, '../../../outbox/asia_morning_latest.html');
+const f = process.argv[2] || p.join(process.env.BRIEF_WORK || process.cwd(), 'outbox', 'asia_morning_latest.html');
 const html = fs.readFileSync(f, 'utf8');
 const now = new Date();
 const y = now.getFullYear(), m = now.getMonth() + 1, d = now.getDate();
